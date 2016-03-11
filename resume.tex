@@ -7,6 +7,7 @@
 \usepackage[letterpaper,margin=1in]{geometry}
 \usepackage[scaled]{helvet}
 \usepackage{url}
+\usepackage{hyperref}
 
 \renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\sectionfont}{\bf\rmfamily}
@@ -28,14 +29,14 @@
 
 \hspace{-\sectionwidth}\hspace{-4pt}
 \begin{tabular*}{\tablewidth}{@{\extracolsep{\fill} } l r }
-  \parbox[b]{6cm}{{\raggedright\LARGE\bf\rmfamily Christopher Cooper}}
-  & \begin{minipage}[b]{10cm}
+  \parbox[b]{10cm}{{\Huge\bf\rmfamily Christopher Cooper}\vspace{3pt}\\
+  1709 Western Dr, West Lafayette, IN 47906}
+  & \begin{minipage}[b]{6cm}
     \begin{flushright}
       %% \rmfamily
       (765) 233-6222\\
-      christopher.c.cooper@gmail.com\\
-      1709 Western Dr, West Lafayette, IN 47906\\
-      \url{cg505.github.io}
+      \href{http://cg505.github.io}{\ttfamily cg505.github.io}\\
+      \href{mailto:christopher.c.cooper@gmail.com}{christopher.c.cooper@gmail.com}
     \end{flushright}
   \end{minipage}
   %% \moveleft.5\hoffset\centerline{1985 Storm Lane}
@@ -112,10 +113,11 @@
   %% Tony Zamora Jazz Scholarship Winner\hfill 2016\\
   \$8000/yr Purdue Presidential Scholarship Winner\hfill 2016\\
   American Computer Science League Central Divison Senior Level Winner\hfill 2015\\
-  Zero Robotics International Third Place Alliance\hfill 2015\\
+  Zero Robotics International Third Seed Alliance\hfill 2015\\
   % AP Scholar with Honor\hfill 2015\\
-  % National Speech and Debate Association National Tournament Qualifier\hfill 2015\\
-  American Invitational Mathematics Examination Qualifier\hfill 2012 \& 2014\\
+  National Speech and Debate Association National Tournament Qualifier\hfill 2015\\
+  Indiana High School All-State Jazz Band Lead Alto/Tenor\hfill 2014 \& 2015\\
+  American Invitational Mathematics Examination Qualifier\hfill 2012 \& 2014
   % American Mathematics Competition School Top 10 Scorer\hfill 2012\\
   % Lafayette Kiwanis Club Scholarship Award Winner\hfill 2012
 
@@ -129,7 +131,7 @@
 
   {\bf\rmfamily Other Tools}
   \begin{itemize} \itemsep -2pt
-  \item \emph{Proficient}: GNU/Linux and shell utilities, git, Emacs, \LaTeX,
+  \item \emph{Proficient}: GNU/Linux and shell utilities, git, GNU Emacs, \LaTeX
   \item \emph{Familiar}: Ruby on Rails, SQL, Bash/Zsh
   \end{itemize}
 
