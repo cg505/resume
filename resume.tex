@@ -8,6 +8,8 @@
 \usepackage[scaled]{helvet}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage{ragged2e}
+\usepackage{multicol}
 
 \renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\sectionfont}{\bf\rmfamily}
@@ -46,35 +48,45 @@
 
 
 \begin{resume}
+% \vfill
 
   \section{OBJECTIVE}
-  To obtain experience in developing applications.
+  To obtain experience in the professional workplace developing production applications.
 
 
   \section{EDUCATION}
   {\bf\rmfamily West Lafayette High School}\hfill Fall 2012 -- present\\
   Pursuing a Core 40 Diploma with Academic Honors, expected May 2016\\
-  Current GPA: 4.0 with 53 credits completed, 6 in progress, including 17 AP credits
+  Current GPA: 4.0 with 53 credits completed, 6 in progress, including 17 AP credits\\
+  Relevant Coursework:
+  \multicolsep 0pt
+  \begin{multicols}{2}
+  \begin{itemize} \itemsep -2pt\RaggedRight
+  \item AP Calculus BC
+  \item AP Physics C
+    \columnbreak
+  \item AP Computer Science test
+  \end{itemize}
+  \end{multicols}
 
   {\bf\rmfamily Purdue University, West Lafayette}\hfill Fall 2014 -- Fall 2015\\
   Non-degree seeking undergraduate student during high school\\
   GPA: 4.0 with 11 credit-hours in 3 courses \\
-  Coursework: Honors multivariate calculus, linear algebra, and proof-based analysis
+  Coursework:
+  \multicolsep 0pt
+  \begin{multicols}{2}
+  \begin{itemize} \itemsep -2pt
+  \item Honors multivariate calculus
+  \item Linear algebra
+  \item Proof-based analysis
+  \end{itemize}
+  \end{multicols}
 
   % {\bf\rmfamily Undetermined university}\hfill Planned enrollment fall 2016\\
   % Pursuing a Bachelor's in Computer Science\\
 
 
   \section{EXPERIENCE}
-  {\bf\rmfamily DevilTech Zero Robotics Team, West Lafayette High School}\\
-  \emph{Team Lead and Programmer}\hfill Fall 2014 -- Winter 2015
-  \begin{itemize}  \itemsep -2pt % reduce space between items
-  \item Wrote C/C++ code for autonomous robots aboard the International Space Station.
-  \item Placed third in an international competition.
-  % \item Organized meeting schedule and educational materials for 10+ members.
-  \item Worked closely with other Zero Robotics teams from around the world.
-  \end{itemize}
-
   {\bf\rmfamily American Computer Science League Chapter, West Lafayette High School}\\
   \emph{President}\hfill Spring 2015 -- present\\
   Previously Vice President\hfill Spring 2013 -- Spring 2015\\
@@ -85,12 +97,20 @@
   % \item Shared responsibility with three other leaders to organize regular meetings.
   \end{itemize}
 
+  {\bf\rmfamily DevilTech Zero Robotics Team, West Lafayette High School}\\
+  \emph{Team Lead and Programmer}\hfill Fall 2014 -- Winter 2015
+  \begin{itemize}  \itemsep -2pt % reduce space between items
+  \item Wrote C/C++ code for autonomous robots aboard the International Space Station.
+  % \item Organized meeting schedule and educational materials for 10+ members.
+  \item Worked closely with other Zero Robotics teams from around the world.
+  \item Placed third in an international competition.
+  \end{itemize}
+
   {\bf\rmfamily  Westside Boiler Invasion Robotics, West Lafayette High School}\\
   \emph{Programmer}\hfill Fall 2012 -- Spring 2015
   \begin{itemize}  \itemsep -2pt % reduce space between items
   \item Worked in a small team to design and develop the team's website using Rails.
-  \item Created a computerized system for scouting potential alliance partners using C, node-webkit, and Sinatra.
-  \item Programmed the team's FRC robot in C++.
+  \item Created a system for scouting potential alliance partners using C and node-webkit.
   \end{itemize}
 
   %% {\bf\rmfamily Sound of West Side Marching Band, West Lafayette High School}\\
@@ -107,19 +127,6 @@
   %% West Lafayette Debate Team\hfill 2013 -- present\\
   %% West Lafayette High School Jazz and Concert Bands\hfill 2012 -- present\\
   %% West Lafayette Jr/Sr High School MathCounts Team Member\hfill 2011 -- 2012
-
-
-  \section{HONORS}
-  %% Tony Zamora Jazz Scholarship Winner\hfill 2016\\
-  \$8000/yr Purdue Presidential Scholarship Winner\hfill 2016\\
-  American Computer Science League Central Divison Senior Level Winner\hfill 2015\\
-  Zero Robotics International Third Seed Alliance\hfill 2015\\
-  % AP Scholar with Honor\hfill 2015\\
-  National Speech and Debate Association National Tournament Qualifier\hfill 2015\\
-  Indiana High School All-State Jazz Band Lead Alto/Tenor\hfill 2014 \& 2015\\
-  American Invitational Mathematics Examination Qualifier\hfill 2012 \& 2014
-  % American Mathematics Competition School Top 10 Scorer\hfill 2012\\
-  % Lafayette Kiwanis Club Scholarship Award Winner\hfill 2012
 
 
   \section{SKILLS}
@@ -148,6 +155,21 @@
   %% Proficiency on saxophone, as well as a good understanding of music theory.
 
 
+  \section{HONORS}
+  %% Tony Zamora Jazz Scholarship Winner\hfill 2016\\
+  \$8000/yr Purdue Presidential Scholarship Winner\hfill 2016\\
+  Tony Zamora Jazz Scholarship Wiiner\hfill 2016\\
+  Purdue Bands Leath Scholarship Winner\hfill 2016\\
+  American Computer Science League Central Divison Senior Level Winner\hfill 2015\\
+  Zero Robotics International Third Seed Alliance\hfill 2015\\
+  % AP Scholar with Honor\hfill 2015\\
+  National Speech and Debate Association National Tournament Qualifier\hfill 2015\\
+  Indiana High School All-State Jazz Band Lead Alto/Tenor\hfill 2014 \& 2015\\
+  American Invitational Mathematics Examination Qualifier\hfill 2012 \& 2014
+  % American Mathematics Competition School Top 10 Scorer\hfill 2012\\
+  % Lafayette Kiwanis Club Scholarship Award Winner\hfill 2012
+
+% \vfill\vfill
 \end{resume}
 
 \end{document}
