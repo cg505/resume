@@ -1,190 +1,222 @@
-\documentclass[line,margin]{res}
+\documentclass[11pt]{article}
 
-\makeatletter
-\def\@classoptionslist{line}
-\makeatother
-
-\usepackage[letterpaper,left=1in,right=1in,top=1in,bottom=.5in]{geometry}
-\usepackage[scaled]{helvet}
-\usepackage{url}
+\usepackage[margin=.5in,letterpaper]{geometry}
+\usepackage{libertine}
+\usepackage{changepage}
 \usepackage{hyperref}
-\usepackage{ragged2e}
-\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[super]{nth}
+\usepackage{xcolor}
+\usepackage{hyphenat}
 
-\renewcommand{\familydefault}{\sfdefault}
-\renewcommand{\sectionfont}{\bf\rmfamily}
+\definecolor{cg505green}{HTML}{00791b}
 
-\headheight=12pt
-\headsep=40pt
-\addtolength{\textheight}{20pt}
-\topmargin=-1in
-\resumewidth=6.5in
-\addtolength{\resumewidth}{-\sectionwidth}
-\textwidth=\resumewidth
+\setlist{nosep} % or \setlist{noitemsep} to leave spaaaaaace around whole list
 
-\newlength{\tablewidth}
-\setlength{\tablewidth}{\resumewidth}
-\addtolength{\tablewidth}{\sectionwidth}
-\addtolength{\tablewidth}{8pt}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\newcommand{\sectionfont}{\Large\scshape\bfseries\color{cg505green}}
+\newcommand{\impact}[1]{\textcolor{cg505green}{\nohyphens{#1}}}
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\fboxsep}{-\fboxrule}
 
 \begin{document}
+\begin{centering}
+  \fontsize{40pt}{50pt}\selectfont
+  \color{cg505green}
+  Christopher Cooper
 
-\hspace{-\sectionwidth}\hspace{-4pt}
-\begin{tabular*}{\tablewidth}{@{\extracolsep{\fill} } l r }
-  \parbox[b]{10cm}{{\Huge\bf\rmfamily Christopher Cooper}\vspace{3pt}\\
-  1709 Western Dr, West Lafayette, IN 47906}
-  & \begin{minipage}[b]{6cm}
-    \begin{flushright}
-      %% \rmfamily
-      \href{https://cg505.com/}{\ttfamily cg505.com}\\
-      \href{tel:+17652336222}{(765) 233-6222}\\
-      \href{mailto:chriscooper@purdue.edu}{chriscooper@purdue.edu}
-    \end{flushright}
-  \end{minipage}
-  %% \moveleft.5\hoffset\centerline{1985 Storm Lane}
-  %% \moveleft.5\hoffset\centerline{Troy, NY 12180}
-  %% \moveleft.5\hoffset\centerline{(518) 273-0014 or (518) 272-6666}
-\end{tabular*}
+\end{centering}
 
+\vspace{10pt}
 
-\begin{resume}
-% \vfill
+\begin{minipage}[t]{0.3\textwidth}
+  %% phantom fixes height issues
+  {\Huge\color{black} me \phantom{my work}}
 
-  %% \section{OBJECTIVE}
-  %% To obtain experience in the professional workplace developing production applications.
+  \vspace{5pt}
 
+  {\sectionfont Contact}
+  \begin{adjustwidth}{10pt}{}
+    \href{https://cg505.com/}{cg505.com}
 
-  \section{EDUCATION}
-  {\bf\rmfamily Purdue University, West Lafayette}\\
-  Bachelor's in Computer Science, Bachelor's in Mathematics\hfill May 2020\\
-  %% Non-degree seeking student during high school\hfill Fall 2014 -- Fall 2015\\
-  High school student enrolled in Purdue courses\hfill Fall 2014 -- Fall 2015\\
-  GPA: 4.0/4.0 with 11 credit-hours completed, 17 in progress (+ 52 transfer)
-  \multicolsep 0pt
-  \begin{multicols}{2}
-  Relevant Coursework:
-  \begin{itemize} \itemsep -2pt
-  \item MA 351: Linear algebra
-  \item MA 341: Proof-based analysis
-  \end{itemize}
-  In progress:
-  \begin{itemize} \itemsep -2pt
-  \item CS 182: Fundamentals of CS
-  \item MA 450: Honors abstract algebra
-  \end{itemize}
-  \end{multicols}
+    \href{mailto:chriscooper@purdue.edu}{chriscooper@purdue.edu}
 
-  % {\bf\rmfamily Undetermined university}\hfill Planned enrollment fall 2016\\
-  % Pursuing a Bachelor's in Computer Science\\
+    \href{tel:+17652336222}{(765) 233-6222}
 
-  {\bf\rmfamily West Lafayette High School}\\
-  Core 40 Diploma with Academic Honors\hfill May 2016\\
-  GPA: 4.0/4.0 with 59 credits, including 17 AP credits%\\
-  %% Relevant Coursework:
-  %% \multicolsep 0pt
-  %% \begin{multicols}{2}
-  %% \begin{itemize} \itemsep -2pt\RaggedRight
-  %% \item AP Calculus BC
-  %%   \columnbreak
-  %% \item AP Physics C
-  %% \end{itemize}
-  %% \end{multicols}
+    \href{https://github.com/cg505/}{github.com/cg505}
+  \end{adjustwidth}
 
+  \vspace{5pt}
 
-  \section{EXPERIENCE}
-  {\bf\rmfamily Studio by Purdue}\\
-  Student Developer Intern\hfill Summer 2016
-  \begin{itemize}  \itemsep -2pt % reduce space between items
-  \item Interacted with senior developers and other interns in a small agile-based team.
-  %% \item Worked in a small agile-based team with senior developers and other interns.
-  %% \item Developed frontend and backend for an app used by thousands of students.
-  \item Abstracted and created functionality for the ASP.NET backend.
-  \item Improved data storage in the React-based frontend using Redux.
-  \end{itemize}
+  {\sectionfont Education}
 
+  \textbf{Purdue University}, West Lafayette
+  \begin{adjustwidth}{10pt}{}
+    B.S. in Computer Science\hfill2020
 
-  {\bf\rmfamily American Computer Science League Chapter, West Lafayette High School}\\
-  President\hfill Spring 2015 -- Spring 2016\\
-  Previously Vice President/Member\hfill Fall 2012 -- Spring 2015
-  \begin{itemize}  \itemsep -2pt % reduce space between items
-  \item Won first place in a five-state regional computer science competition.
-  \item Taught programming and computer science concepts to about 20 members.
-\item Shared responsibility with three other leaders to organize regular meetings.
-  \end{itemize}
+    B.S. in Mathematics\hfill2020
 
-  {\bf\rmfamily DevilTech Zero Robotics Team, West Lafayette High School}\\
-  Team Lead\hfill Fall 2014 -- Winter 2015
-  \begin{itemize}  \itemsep -2pt % reduce space between items
-  \item Placed third in the international MIT Zero Robotics competition.
-  \item Wrote C/C++ code for autonomous robots aboard the International Space Station.
-  % \item Organized meeting schedule and educational materials for 10+ members.
-  \item Collaborated closely with other Zero Robotics teams from around the world.
-  \end{itemize}
+    GPA: 3.97/4.0, with 28 credit-hours
 
-  {\bf\rmfamily  Westside Boiler Invasion Robotics, West Lafayette High School}\\
-  Programmer\hfill Fall 2012 -- Spring 2015
-  \begin{itemize}  \itemsep -2pt % reduce space between items
-  \item Designed and developed the team's website using Rails with three other students.
-  \item Created a C program to analyze and organize large amounts of scouting data.
-  \end{itemize}
+    Coursework in progress:
+    \begin{itemize}[leftmargin=*]
+    \item CS 240: \emph{Programming in C}
+    \item CS 251: \emph{Data Sctructures \&}\\\phantom{CS 251:} \emph{Algorithms}
+    \item MA 450: \emph{Galois Theory}
+    \end{itemize}
+  \end{adjustwidth}
 
-  %% {\bf\rmfamily Sound of West Side Marching Band, West Lafayette High School}\\
-  %% \emph{Woodwind Co-captain}\hfill Fall 2014 \& 2015\\
-  %% Previously Member\hfill Fall 2012 \& 2013
-  %% \begin{itemize}  \itemsep -2pt % reduce space between items
-  %% \item Performed with the band, making the top sixteen in the state two different years.
-  %% \item Lead a section of about 25 musicians along with one other co-captain.
-  %% \end{itemize}
+  \textbf{West Lafayette High School}
+  \begin{adjustwidth}{10pt}{}
+    Academic Honors Diploma \hfill2016
 
+    GPA: 4.00/4.0, with 59 credits
+  \end{adjustwidth}
 
-  %% \section{OTHER EXPERIENCE}
-  %% Westside Boiler Invasion Robotics Team\hfill 2012 -- present\\
-  %% West Lafayette Debate Team\hfill 2013 -- present\\
-  %% West Lafayette High School Jazz and Concert Bands\hfill 2012 -- present\\
-  %% West Lafayette Jr/Sr High School MathCounts Team Member\hfill 2011 -- 2012
+  \vspace{5pt}
 
+  {\sectionfont Skills}
 
-  \section{SKILLS}
-  {\bf\rmfamily Programming Languages}
-  \begin{itemize} \itemsep -2pt
-  \item \emph{Proficiency}: Ruby, Javascript, C\#, Lisp
-  \item \emph{Experience}: C, C++, CSS, HTML, Java, Python, Elixir
-  \end{itemize}
+  \textbf{Programming Languages}
+  \begin{adjustwidth}{10pt}{}
+    \emph{Proficiency}
 
-  {\bf\rmfamily Other Tools/Frameworks}
-  \begin{itemize} \itemsep -2pt
-  \item \emph{Proficiency}: Git, GNU/Linux and shell utilities, React, Redux
-  \item \emph{Experience}: Ruby on Rails, ASP.NET, SQL, Bash/Zsh, Phoenix
-  \end{itemize}
+    \quad Ruby, Javascript, C, C\#, Lisp
 
-  % {\bf\rmfamily Mathematics} \quad
-  % Solid knowledge of college-level mathematics and understanding of applications to the sciences.
+    \emph{Experience}
 
-  %% {\bf\rmfamily Sciences} \quad
-  %% Developed understanding of high-school physics, biology, and chemistry.
+    \quad C++, CSS, HTML, Java, Elixir
+  \end{adjustwidth}
 
-  %% {\bf\rmfamily Speaking} \quad
-  %% Considerable experience with public speaking and argumentation.
+  \textbf{Other Tools/Frameworks}
+  \begin{adjustwidth}{10pt}{}
+    \emph{Proficiency}
 
-  %% {\bf\rmfamily Music} \quad
-  %% Proficiency on saxophone, as well as a good understanding of music theory.
+    \quad Git, Linux, React, Redux
 
+    \emph{Experience}
 
-  \section{HONORS}
-  %% Tony Zamora Jazz Scholarship Winner\hfill 2016\\
-  \$8000/yr Purdue Presidential Scholarship Winner\hfill 2016\\
-  Tony Zamora Jazz Scholarship Winner\hfill 2016\\
-  Purdue Bands Leath Scholarship Winner\hfill 2016\\
-  National AP Scholar\hfill 2016\\
-  American Computer Science League Central Division Senior Level Winner\hfill 2015\\
-  Zero Robotics International Third Seed Alliance\hfill 2015\\
-  National Speech and Debate Association National Tournament Qualifier\hfill 2015\\
-  Indiana High School All-State Jazz Band Lead Alto/Tenor\hfill 2014 \& 2015\\
-  American Invitational Mathematics Examination Qualifier\hfill 2012 \& 2014
-  % American Mathematics Competition School Top 10 Scorer\hfill 2012\\
-  % Lafayette Kiwanis Club Scholarship Award Winner\hfill 2012
+    \quad Rails, ASP.NET, SQL, Phoenix
+  \end{adjustwidth}
 
-% \vfill\vfill
-\end{resume}
+  \vspace{5pt}
 
+  {\sectionfont Honors}
+  \begin{adjustwidth}{10pt}{}
+    Purdue Presidential\hfill 2016\\
+    Scholarship Winner
+
+    Tony Zamora Jazz\hfill 2016\\
+    Scholarship Winner
+
+    Purdue Bands Leath\hfill 2016\\
+    Scholarship Winner
+
+    National AP Scholar\hfill 2016
+
+    NSDA National\hfill 2015\\
+    Tournament Qualifier
+
+    Indiana HS All-State\hfill 2014 \&\\
+    Jazz Band\hfill 2015
+
+    AIME Qualifier\hfill 2012 \& 2014
+  \end{adjustwidth}
+\end{minipage}
+\hfill\vrule\hfill{}
+\begin{minipage}[t]{0.67\textwidth}
+  %% phantom fixes possible height issues
+  {\Huge\color{black} my work \phantom{me}}
+
+  \vspace{5pt}
+
+  {\sectionfont Work Experience}
+
+  \textbf{Angie's List}\hfill Indianapolis, IN
+  \begin{adjustwidth}{10pt}{}
+    \emph{Software Engineering Intern}\hfill Summer 2017
+
+    Details to come upon completion.
+  \end{adjustwidth}
+
+  \textbf{Studio by Purdue}\hfill West Lafayette, IN
+  \begin{adjustwidth}{10pt}{}
+    \emph{Student Developer Intern}\hfill Summer 2016
+
+    Focus: \href{https://academicforecast.org/about/}{academicforecast.org}, an app identifying successful trends for students.
+
+    \impact{Deployed this app to tens of thousands} of students with senior developers in a small agile-based team.
+    Improved data flow in the React-based frontend using Redux.
+    Abstracted and created functionality for the ASP.NET backend.
+  \end{adjustwidth}
+
+  \vspace{5pt}
+
+  {\sectionfont Other Experience}
+
+  \textbf{American Computer Science League Chapter}\hfill West Lafayette High School
+  \begin{adjustwidth}{10pt}{}
+    \emph{President}\hfill Spring 2015 -- Spring 2016
+
+    Previously \emph{Vice President/Member}\hfill Fall 2012 -- Spring 2015
+
+    Individually \impact{won \nth{1} place} in a 5-state regional computer science competition.
+    Taught programming and computer science concepts to about 20 members.
+  \end{adjustwidth}
+
+  \textbf{DevilTech Zero Robotics Team}\hfill West Lafayette High School
+  \begin{adjustwidth}{10pt}{}
+    \emph{Team Lead}\hfill Fall 2014 -- Winter 2015
+
+    Collaborated closely with Zero Robotics teams from \impact{around the world} to write C++ code for autonomous robots aboard the International Space Station.
+    \impact{Placed \nth{3}} in the international MIT Zero Robotics competition.
+    % Organized meeting schedule and educational materials for 10+ members.
+  \end{adjustwidth}
+
+  \textbf{Westside Boiler Invasion Robotics}\hfill West Lafayette High School
+  \begin{adjustwidth}{10pt}{}
+    \emph{Programmer}\hfill Fall 2012 -- Spring 2015
+
+    Designed and developed the team's website using Rails.
+    Deployed a C program to organize and analyze hundreds of scouting records.
+    Established a program with another school to create open-source scouting software.
+  \end{adjustwidth}
+
+  \vspace{5pt}
+
+  {\sectionfont Personal Projects}
+
+  \textbf{kotct/dot}\hfill\href{https://github.com/kotct/dot/}{github.com/kotct/dot}
+  \begin{adjustwidth}{10pt}{}
+    \emph{MinneHack}\hfill January 2017
+
+    A compliation of excellent dotfiles for common shells and editors.
+    I designed the GNU Emacs configuration to be modular, lightweight, and easy to extend.
+    It can seamlessly switch between personal configurations hosted on GitHub.
+  \end{adjustwidth}
+
+  \textbf{ringu}\hfill\href{https://github.com/cg505/ringu/}{github.com/cg505/ringu}
+  \begin{adjustwidth}{10pt}{}
+    Dissatisfaction with existing Android Wear watch faces led me to create Ringu.
+    It's designed to show information through rings around the watch face.
+  \end{adjustwidth}
+
+  \textbf{Docket}
+  \begin{adjustwidth}{10pt}{}
+    A virtual homework docket aimed to crowdsource homework assignments for high school classes.
+    Since retired.
+  \end{adjustwidth}
+
+  \textbf{TicTacToe}\hfill\href{https://github.com/cg505/TicTacToe/}{github.com/cg505/TicTacToe}
+  \begin{adjustwidth}{10pt}{}
+    A small exploratory project implementing AI techniques in the game tic-tac-toe.
+    %% The Lisp code includes a bot that never loses and one that tends to beat random players.
+    I wrote the base code in \nth{5} grade but have since updated it to support arbitrary board sizes and other features.
+  \end{adjustwidth}
+\end{minipage}
 \end{document}
