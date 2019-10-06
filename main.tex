@@ -16,6 +16,8 @@
 \setlength{\parindent}{0pt}
 \setlength{\fboxsep}{-\fboxrule}
 
+\newcommand{\link}[2]{\href{#1}{\underline{#2}}}
+
 \begin{document}
 %% not sure what this does but it works
 %% \vspace*{-20pt}
@@ -44,11 +46,9 @@
   \begin{adjustwidth}{10pt}{}
     \href{https://cg505.com/}{cg505.com}
 
-    \href{tel:+17652336222}{(765) 233-6222}
-
     \href{https://github.com/cg505/}{github.com/cg505}
 
-    \href{https://linkedin.com/in/cg505}{linkedin.com/in/cg505}
+    %% \href{https://linkedin.com/in/cg505}{linkedin.com/in/cg505}
 
     \href{mailto:cooperc@berkeley.edu}{cooperc@berkeley.edu}
   \end{adjustwidth}
@@ -58,38 +58,38 @@
   {\sectionfont Education}
 
   \vspace{5pt}
-  \textbf{University of California, Berkeley}
+  \textbf{University of California, Berkeley}%
+  \vspace{2pt}
   \begin{adjustwidth}{10pt}{}
-    Expected Graduation:\hfill2020
+    Expected Graduation:\hfill{}Spring 2020
 
     B.A. in Computer Science
-
-    B.A. in Mathematics
 
     %% \enskip and Mathematics
 
     Relevant coursework:
     \begin{itemize}[leftmargin=*]
-    \item CS 164: \emph{Programming Languages}\\\phantom{CS 164:} \emph{and Compilers}
+    \item CS 162: \emph{Operating Systems}
+    \item CS 164: \emph{Programming Languages}\\\phantom{CS 164: }\emph{and Compilers}
     \item MATH 185: \emph{Complex Analysis}
     \end{itemize}
   \end{adjustwidth}
 
   \vspace{5pt}
   \textbf{Purdue University}, West Lafayette
+  \vspace{2pt}
   \begin{adjustwidth}{10pt}{}
-    \emph{GPA: 3.81} \hfill2016-2018
+    \emph{GPA: 3.81}\hfill{}Fall 2016 -- Spring 2018
 
-    Pursued B.S. degrees
+    Pursued B.S. degrees in
 
-    \enskip in Computer Science and Math
+    \enskip Computer Science and Math
 
     %% \textbf{GPA: 3.82}%, with 79 {\bf\color{red} UPDATE ME}
 
     Relevant coursework:
     \begin{itemize}[leftmargin=*]
-    \item CS 252: \emph{Systems Programming}
-    \item CS 373: \emph{Data Mining \&}\\\phantom{CS 373:} \emph{Machine Learning}
+    \item CS 373: \emph{Data Mining \&}\\\phantom{CS 373: }\emph{Machine Learning}
     \item CS 381: \emph{Algorithms}
     \item MA 571: \emph{Topology}
     \end{itemize}
@@ -101,32 +101,35 @@
 
   \vspace{5pt}
   \textbf{Programming Languages}
+  \vspace{2pt}
   \begin{adjustwidth}{10pt}{}
     \emph{Proficiency}
 
-    \quad Javascript, C/C++, Python, Lisp
+    \quad Javascript, Go, C/C++, Python
 
     \emph{Experience}
 
-    \quad Java, C\#, Scala, Ruby, Elixir, R
+    \quad Java, C\#, Scala, Ruby, Elixir, Lisp
 
     %% \quad , R, MATLAB
   \end{adjustwidth}
 
   \vspace{5pt}
   \textbf{Other Tools/Frameworks}
+  \vspace{2pt}
   \begin{adjustwidth}{10pt}{}
     \emph{Proficiency}
 
-    \quad Git, Linux, React, Redux
+    \quad Git, Kubernetes, Linux, React
 
     \emph{Experience}
 
-    \quad ASP.NET, Android, Puppet
+    \quad Puppet, Jenkins, Android
   \end{adjustwidth}
 
   \vspace{5pt}
   \textbf{Hobbies}
+  \vspace{2pt}
   \begin{adjustwidth}{10pt}{}
     \emph{Talk to me about}
 
@@ -134,6 +137,12 @@
 
     \quad Audio Engineering, Music
   \end{adjustwidth}
+
+  \vspace{20pt}
+
+  \textbf{This resume:}\enspace
+  \link{https://cg505.com/resume.pdf}{co5.us/resume}
+
 
   %% \vspace{10pt}
 
@@ -178,6 +187,26 @@
   {\sectionfont Work Experience}
 
   \vspace{5pt}
+  \textbf{Brave Software}\quad\link{https://brave.com}{brave.com}\hfill San Francisco, CA
+  \begin{adjustwidth}{10pt}{}
+    \emph{Software Engineering Intern}\hfill Summer 2019 -- \emph{present}
+
+    \textbf{Improved} inter-process communication between components in the browser C++ core.
+    \textbf{Built} React UI components for the Rewards system and local cryptocurrency wallet.
+    \textbf{Merged} \link{https://github.com/pulls?q=is\%3Apr+author\%3Acg505+repo\%3Abrave\%2Fbrave-core+repo\%3Abrave\%2Fbrave-ui+repo\%3Abrave\%2Fethereum-remote-client}{dozens of pull requests} that are public on GitHub.
+  \end{adjustwidth}
+
+  \vspace{5pt}
+  \textbf{Kelda}\quad\link{https://www.kelda.io}{kelda.io}\hfill Berkeley, CA
+  \begin{adjustwidth}{10pt}{}
+    \emph{Software Engineering Intern}\hfill Spring 2019
+
+    \textbf{Built} features for \impact{a distributed application to assist development in the cloud}.
+    \textbf{Created} Kubernetes CRDs and controllers, working with the Kubernetes Go API.
+    \textbf{Designed} this distributed architecture within a small startup team.
+  \end{adjustwidth}
+
+  \vspace{5pt}
   \textbf{Studio by Purdue}\hfill West Lafayette, IN
   \begin{adjustwidth}{10pt}{}
     \emph{Student Developer Intern}\hfill Summer 2016, Summer 2018
@@ -188,60 +217,62 @@
   \end{adjustwidth}
 
   \vspace{5pt}
-  \textbf{Angie's List}\hfill Indianapolis, IN
-  \begin{adjustwidth}{10pt}{}
-    \emph{Software Engineering Intern}\hfill Summer 2017
-
-    \textbf{Reimplemented} a price comparison tool available to members using the new React/Redux functional stack.
-    \textbf{Restructured} \impact{microservice request handling} within the company's shared Scala backend library.
-    \textbf{Created} integration tests and endpoint coverage reporting for the Javascript Mocha testing framework.
-  \end{adjustwidth}
-
-  \vspace{10pt}
-
-  {\sectionfont Teaching Experience}
-
-  \vspace{5pt}
-  \textbf{TheCoderSchool}\hfill Berkeley, CA
-  \begin{adjustwidth}{10pt}{}
-    \emph{Code Coach}\hfill Fall 2018 -- \emph{present}
-
-    \textbf{Teach} programming and computer science concepts one-on-one and in small groups to elementary and middle school kids.
-  \end{adjustwidth}
-
-  \vspace{5pt}
   \textbf{Department of Computer Science, Purdue University}\hfill West Lafayette, IN
   \begin{adjustwidth}{10pt}{}
     \emph{Teaching Assistant, CS 252 (Systems Programming)}\hfill Summer 2018
 
-    \textbf{\impact{Mentored}} students with assignments and course material.
-    \textbf{Created and updated} programming labs handouts and C skeleton code.
+    \textbf{Mentored} students with assignments and course material.
+    \textbf{Created and updated} programming lab handouts and C skeleton code.
   \end{adjustwidth}
+
+  \vspace{5pt}
+  \textbf{Angie's List}\quad\link{https://www.angieslist.com/}{angieslist.com}\hfill Indianapolis, IN
+  \begin{adjustwidth}{10pt}{}
+    \emph{Software Engineering Intern}\hfill Summer 2017
+
+    \textbf{Reimplemented} a price comparison tool using the new React/Redux stack.
+    \textbf{Restructured} \impact{microservice request handling} within the company Scala backend library.
+    \textbf{Created} integration tests and endpoint coverage reporting.
+  \end{adjustwidth}
+
+  %% \vspace{10pt}
+
+  %% {\sectionfont Teaching Experience}
+
+  %% \vspace{5pt}
+  %% \textbf{TheCoderSchool}\hfill Berkeley, CA
+  %% \begin{adjustwidth}{10pt}{}
+  %%   \emph{Code Coach}\hfill Fall 2018 -- Spring 2019
+
+  %%   \textbf{Taught} programming and CS concepts to elementary and middle school kids.
+  %% \end{adjustwidth}
 
   \vspace{10pt}
 
   {\sectionfont Other Experience}
 
   \vspace{5pt}
-  \textbf{Open Computing Facility}\hfill University of California, Berkeley
+  \textbf{Open Computing Facility}\quad\link{https://www.ocf.berkeley.edu/}{ocf.io}\hfill University of California, Berkeley
   \begin{adjustwidth}{10pt}{}
+    \emph{General Manager}\hfill Summer 2019 -- \emph{present}\\
     \emph{Technical Manager}\hfill Fall 2018 -- \emph{present}
 
-    \textbf{Manage} a computer lab of 29 Debian Linux workstations.
-    \textbf{Leverage} \impact{industry-standard tools} such as LDAP, Mesos distributed computing, and Puppet configuration management.
-    \textbf{Maintain} an array of servers providing webhosting, high performance computing, software mirrors, and other services to 6000+ active users and 1000+ student organizations.
+    \textbf{Lead} \textasciitilde{}100 volunteer staff and 8 paid staff, utilizing \$90k+ yearly funding.
+    \textbf{Leverage} \impact{industry-standard tools} such as LDAP/Kerberos, Kubernetes, and Puppet configuration management.
+    \textbf{Maintain} an array of servers providing high performance computing, software mirrors, \impact{webhosting with 800k+ daily hits}, and other services to 6000+ active users and 1000+ student organizations.
+    \textbf{Manage} a lab of 30 Debian Linux workstations with thousands of weekly users.
 
   \end{adjustwidth}
 
-  \vspace{5pt}
-  \textbf{Political Computer Science at Berkeley}\hfill University of California, Berkeley
-  \begin{adjustwidth}{10pt}{}
-    \emph{Member}\hfill Fall 2018 -- \emph{present}
+  %% \vspace{5pt}
+  %% \textbf{Political Computer Science at Berkeley}\hfill University of California, Berkeley
+  %% \begin{adjustwidth}{10pt}{}
+  %%   \emph{Member}\hfill Fall 2018 -- \emph{present}
 
-    Project in-progress: \emph{Engineering Activism}, a recommender system in Python to inform activists and organizers of new bills.
-    \textbf{Integrate} APIs from Propublica and the US GPO to obtain info about bills.
-    \textbf{Consult} with a small startup.
-  \end{adjustwidth}
+  %%   Project in-progress: \emph{Engineering Activism}, a recommender system in Python to inform activists and organizers of new bills.
+  %%   \textbf{Integrate} APIs from Propublica and the US GPO to obtain info about bills.
+  %%   \textbf{Consult} with a small startup.
+  %% \end{adjustwidth}
 
   %% \textbf{American Computer Science League Chapter}\hfill West Lafayette High School
   %% \begin{adjustwidth}{10pt}{}
@@ -276,9 +307,9 @@
   {\sectionfont Personal Projects}
 
   \vspace{5pt}
-  \textbf{kotct/dot}\hfill\href{https://github.com/kotct/dot/}{co5.us/dot}
+  \textbf{kotct/dot}\quad\link{https://github.com/kotct/dot/}{co5.us/dot}
   \begin{adjustwidth}{10pt}{}
-    \emph{\href{https://minnehack.io/}{MinneHack}} at University of Minnesota\hfill January 2017
+    \emph{\link{https://minnehack.io/}{MinneHack}} at University of Minnesota\hfill January 2017
 
     A tool for creating universally-available personal configurations, supporting GNU Emacs.
     Any dot user can seamlessly fetch and enable any other user's configuration, with just a few keystrokes.
@@ -301,7 +332,7 @@
   %% \end{adjustwidth}
 
   %% \textbf{TicTacToe}\hfill\href{https://github.com/cg505/TicTacToe/}{github.com/cg505/TicTacToe}
-  %% \begin{adjustwidth}{10pt}{}
+  %% \begin{adppjustwidth}{10pt}{}
   %%   An exploration of AI algorithms applied to tic-tac-toe.
   %%   %% The Lisp code includes a bot that never loses and one that tends to beat random players.
   %%   Originally written in \nth{5} grade, I've recently updated the code to add features like arbitrary board sizes.
